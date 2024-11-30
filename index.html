@@ -8,18 +8,96 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
         h1 {
-            color: #333;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .main-content {
+            background-color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
         }
         p {
-            color: #666;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .feature-card {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to RomStocks</h1>
-    <p>This is a simple test page for our GitHub repository.</p>
+    <header>
+        <div class="container">
+            <h1>Welcome to RomStocks</h1>
+            <p>Your Gateway to Smart Investment Solutions</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section class="section">
+                <h2>About Our Project</h2>
+                <p>RomStocks is a comprehensive platform designed to help investors make informed decisions. We combine cutting-edge technology with market insights to provide you with the best investment experience.</p>
+            </section>
+
+            <section class="section">
+                <h2>Key Features</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Real-time Analytics</h3>
+                        <p>Stay updated with live market data and trending analytics.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Portfolio Management</h3>
+                        <p>Manage your investments with our intuitive portfolio tools.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Market Insights</h3>
+                        <p>Access expert analysis and market predictions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Get Started</h2>
+                <p>Join thousands of investors who trust RomStocks for their investment decisions. Start your journey today!</p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
